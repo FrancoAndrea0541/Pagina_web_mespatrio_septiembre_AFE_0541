@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Independencia de México - Inicio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { height: 100%; font-family: Arial, sans-serif; }
+        body { display: flex; flex-direction: column; min-height: 100vh; }
+
+        .header-principal {
+            background-color: #4A2E1B;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+        }
+
+        .btn {
+            width: 170px;
+            height: 42px;
+            margin-right: 10px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 11px;
+            text-align: center;
+            line-height: 1.2;
+            padding: 2px 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        .btn-verde { background-color: #006847; color: white; }
+        .btn-blanco { background-color: #FFFFFF; color: black; }
+        .btn-rojo { background-color: #CE1126; color: white; }
+
+        .subheader {
+            background-color: #4B5563;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .bandera-contenedor {
+            flex: 1;
+            display: flex;
+            width: 100%;
+        }
+
+        .franja {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            overflow-y: auto;
+        }
+        .franja h3 { margin-bottom: 15px; text-transform: uppercase; }
+        .franja p { margin-bottom: 12px; font-size: 14px; text-align: left; line-height: 1.4; }
+
+        .verde { background-color: #006847; color: white; }
+        .blanca { background-color: #FFFFFF; color: black; }
+        .roja { background-color: #CE1126; color: white; }
+
+        .footer {
+            background-color: #374151;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER CAFÉ CON BOTONES -->
+    <header class="header-principal">
+        <a href="fechasimportantes.html" class="btn btn-verde">FECHAS IMPORTANTES</a>
+        <a href="datosymitos.html" class="btn btn-blanco">DATOS CURIOSOS Y MITOS</a>
+        <a href="personajes.html" class="btn btn-rojo">PERSONAJES ILUSTRES</a>
+    </header>
+
+    <!-- SUBHEADER GRIS -->
+    <header class="subheader">
+        <h2>INICIO</h2>
+    </header>
+
+    <!-- CENTRO -->
+    <main class="bandera-contenedor">
+        <section class="franja verde">
+            <h3>SEPTIEMBRE MES PATRÍO</h3>
+            <p><strong>¡VIVA MEXICO!</strong></p>
+            <p>¡Vamos a festejar este mes patrío con todo el orgullo Méxicano como debe de ser!.</p>
+            <p>Aquí podrás ver las fechas importantes del mes de septiembre, sus datos curiosos, sus mitos y sus personajes ilustres.</p>
+        </section>
+        
+        <section class="franja blanca">
+	<img src="mapamexico.jpg" height= 70%>
+        </section>
+        
+        <section class="franja roja">
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>| Nombre: Andrea Franco Enríquez</p>
+        <p>| No.control: 0541</p>
+        <p>| Semestre: 5</p>
+        <p>| Grupo: I |</p>
+    </footer>
+
+</body>
+</html>

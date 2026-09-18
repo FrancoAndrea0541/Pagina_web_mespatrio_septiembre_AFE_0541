@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración técnica: juego de caracteres UTF-8 y diseño adaptativo a pantallas táctiles o móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Independencia de México - Datos Curiosos y Mitos</title>
+    
+    <!-- Reglas de estilo en cascada (CSS) para dar formato visual al documento -->
     <style>
+        /* Reseteo general para eliminar márgenes y rellenos por defecto del navegador */
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Configuración de la estructura de la página y tipografía principal */
         html, body { height: 100%; font-family: Arial, sans-serif; }
         body { display: flex; flex-direction: column; min-height: 100vh; }
 
+        /* Estilos del menú de navegación superior (color café) */
         .header-principal {
             background-color: #4A2E1B;
             height: 60px;
@@ -17,6 +24,7 @@
             padding-left: 20px;
         }
 
+        /* Estilo general para las pestañas/botones de la barra superior */
         .btn {
             width: 170px;
             height: 42px;
@@ -33,10 +41,12 @@
             justify-content: center;
             text-decoration: none;
         }
+        /* Asignación de colores patrios a las clases de los botones */
         .btn-verde { background-color: #006847; color: white; }
         .btn-blanco { background-color: #FFFFFF; color: black; }
         .btn-rojo { background-color: #CE1126; color: white; }
 
+        /* Encabezado secundario (color gris) para indicar el título de la página activa */
         .subheader {
             background-color: #4B5563;
             height: 45px;
@@ -46,12 +56,14 @@
             color: white;
         }
 
+        /* Contenedor flexible principal que alineará las tres columnas en horizontal */
         .bandera-contenedor {
             flex: 1;
             display: flex;
             width: 100%;
         }
 
+        /* Reglas generales para las tres secciones verticales/columnas */
         .franja {
             flex: 1;
             padding: 20px;
@@ -61,12 +73,15 @@
         .franja h3 { margin-bottom: 15px; text-transform: uppercase; }
         .franja p { margin-bottom: 12px; font-size: 14px; text-align: left; line-height: 1.4; }
         
+        /* Formato responsivo para las imágenes dentro de las franjas */
         .franja img { max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px; }
 
+        /* Colores representativos de la bandera aplicados al fondo de cada franja */
         .verde { background-color: #006847; color: white; }
         .blanca { background-color: #FFFFFF; color: black; }
         .roja { background-color: #CE1126; color: white; }
 
+        /* Estilos de la barra de pie de página (color gris oscuro) */
         .footer {
             background-color: #374151;
             height: 40px;
@@ -82,6 +97,7 @@
 <body>
 
     <!-- HEADER CAFÉ CON BOTONES -->
+    <!-- Menú de navegación principal que conecta con las otras vistas de la aplicación -->
     <header class="header-principal">
         <a href="index.html" class="btn btn-verde">INICIO</a>
         <a href="fechasimportantes.html" class="btn btn-blanco">FECHAS IMPORTANTES</a>
@@ -89,12 +105,15 @@
     </header>
 
     <!-- SUBHEADER GRIS -->
+    <!-- Título descriptivo de la vista actual -->
     <header class="subheader">
         <h2>DATOS CURIOSOS Y MITOS</h2>
     </header>
 
     <!-- CENTRO -->
+    <!-- Contenido en tres franjas verticales con mitos y datos históricos -->
     <main class="bandera-contenedor">
+        <!-- Franja Verde: Información sobre la fecha real del Grito y la tradición gastronómica -->
         <section class="franja verde">
             <!-- Imagen de Miguel Hidalgo / Estandarte -->
             <img src="hidalgoestandarte.jpeg" >
@@ -105,6 +124,7 @@
             <p><strong>La temporada de chiles en nogada:</strong> Este platillo tradicional tricolor (verde, blanco y rojo) alcanza su máxima producción y consumo precisamente durante septiembre gracias a la cosecha de ingredientes de temporada como la nuez de castilla y la granada.</p>
         </section>
         
+        <!-- Franja Blanca: Información sobre el campanero real y la ubicación de la campana -->
         <section class="franja blanca">
 	    <img src="hidalgocampana.jpg" >
             <p><strong>Miguel Hidalgo tocó la campana: Falso.</strong> El campanero de la parroquia de Dolores, llamado José Galván, fue quien hizo sonar las campanas.</p>
@@ -113,6 +133,7 @@
             <p><strong>La campana viajera:</strong> La campana original que usó el cura Hidalgo en Dolores Guanajuato fue trasladada al Palacio Nacional en la Ciudad de México por órdenes de Porfirio Díaz en 1896.</p>
         </section>
         
+        <!-- Franja Roja: Información sobre la duplicidad del Acta de Independencia de México -->
         <section class="franja roja">
             <!-- Imagen del Acta de Independencia -->
             <img src="actaindependencia.jpg" alt="Acta de Independencia de México">
@@ -121,6 +142,7 @@
     </main>
 
     <!-- FOOTER -->
+    <!-- Pie de página informativo con los datos del alumno -->
     <footer class="footer">
         <p>| Nombre: Andrea Franco Enríquez</p>
         <p>| No.control: 0541</p>

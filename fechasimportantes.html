@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica de codificación y adaptación a pantallas móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Independencia de México - Fechas Importantes</title>
+    
+    <!-- Estilos CSS internos -->
     <style>
+        /* Reinicio de márgenes, rellenos y cálculo de caja universal */
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Ajuste para ocupar toda la altura del navegador */
         html, body { height: 100%; font-family: Arial, sans-serif; }
         body { display: flex; flex-direction: column; min-height: 100vh; }
 
+        /* Estilo de la barra principal (café) para el menú */
         .header-principal {
             background-color: #4A2E1B;
             height: 60px;
@@ -17,6 +24,7 @@
             padding-left: 20px;
         }
 
+        /* Estilos generales para los botones del menú superior */
         .btn {
             width: 170px;
             height: 42px;
@@ -33,10 +41,12 @@
             justify-content: center;
             text-decoration: none;
         }
+        /* Colores temáticos para cada botón de navegación */
         .btn-verde { background-color: #006847; color: white; }
         .btn-blanco { background-color: #FFFFFF; color: black; }
         .btn-rojo { background-color: #CE1126; color: white; }
 
+        /* Estilo de la barra secundaria (gris) con el título de la sección */
         .subheader {
             background-color: #4B5563;
             height: 45px;
@@ -46,12 +56,14 @@
             color: white;
         }
 
+        /* Contenedor flexible principal para dividir el contenido en 3 columnas */
         .bandera-contenedor {
             flex: 1;
             display: flex;
             width: 100%;
         }
 
+        /* Propiedades de diseño para las 3 columnas o franjas */
         .franja {
             flex: 1;
             padding: 20px;
@@ -61,10 +73,12 @@
         .franja h3 { margin-bottom: 15px; text-transform: uppercase; }
         .franja p { margin-bottom: 12px; font-size: 14px; text-align: left; line-height: 1.4; }
 
+        /* Paleta de colores para simular los colores de la bandera tricolor */
         .verde { background-color: #006847; color: white; }
         .blanca { background-color: #FFFFFF; color: black; }
         .roja { background-color: #CE1126; color: white; }
 
+        /* Estilo del pie de página con información del alumno */
         .footer {
             background-color: #374151;
             height: 40px;
@@ -80,6 +94,7 @@
 <body>
 
     <!-- HEADER CAFÉ CON BOTONES -->
+    <!-- Menú superior con navegación hacia las demás páginas del sitio -->
     <header class="header-principal">
         <a href="index.html" class="btn btn-verde">INICIO</a>
         <a href="datosymitos.html" class="btn btn-blanco">DATOS CURIOSOS Y MITOS</a>
@@ -87,21 +102,25 @@
     </header>
 
     <!-- SUBHEADER GRIS -->
+    <!-- Encabezado con el nombre de la página actual -->
     <header class="subheader">
         <h2>FECHAS IMPORTANTES</h2>
     </header>
 
     <!-- CENTRO -->
+    <!-- Sección de contenido repartida en tres franjas verticales -->
     <main class="bandera-contenedor">
+        <!-- Franja Verde: Fechas históricas de la primera semana de septiembre -->
         <section class="franja verde">
             <p>• <strong>4 de septiembre de 1969:</strong> Fue inaugurada la Línea 1 del Sistema de Transporte Colectivo Metro, en la Ciudad de México.</p>
             <p></p>
             <p>• <strong>5 de septiembre:</strong> Día Internacional de la Mujer Indígena.</p>
-	    <p></p>
+            <p></p>
             <p>• <strong>8 de septiembre:</strong> Día Internacional del Periodista.</p>
             <p>• <strong>13 de septiembre de 1847:</strong> Aniversario del sacrificio de los Niños Héroes de Chapultepec.</p>
         </section>
         
+        <!-- Franja Blanca: Fechas clave de mediados de septiembre (incluye la Independencia y el Grito) -->
         <section class="franja blanca">
             <p>• <strong>15 de septiembre de 1810:</strong> Conmemoración del Grito de Independencia.</p>
             <p>• <strong>15 de septiembre de 1854:</strong> Se interpretó por primera vez el "Himno Nacional Mexicano", escrito por Francisco González Bocanegra y musicalizado por Jaime Nunó.</p>
@@ -111,6 +130,7 @@
             <p>• <strong>21 de septiembre:</strong> Se conmemora el Día Internacional de la Paz.</p>
         </section>
         
+        <!-- Franja Roja: Fechas conmemorativas de finales de septiembre -->
         <section class="franja roja">
             <p>• <strong>22 de septiembre de 1910:</strong> Se inauguró solemnemente la Universidad Nacional de México.</p>
             <p>• <strong>29 de septiembre:</strong> Día Nacional del Maíz.</p>
@@ -119,6 +139,7 @@
     </main>
 
     <!-- FOOTER -->
+    <!-- Pie de página con datos escolares del creador del documento -->
     <footer class="footer">
         <p>| Nombre: Andrea Franco Enríquez</p>
         <p>| No.control: 0541</p>

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica del documento: codificación de caracteres y vista responsiva para móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Independencia de México - Inicio</title>
+    
+    <!-- Hoja de estilos CSS interna -->
     <style>
+        /* Reinicio global para quitar márgenes y rellenos por defecto del navegador */
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Asegura que el cuerpo de la página ocupe al menos el 100% de la altura de la pantalla */
         html, body { height: 100%; font-family: Arial, sans-serif; }
         body { display: flex; flex-direction: column; min-height: 100vh; }
 
+        /* Estilos del encabezado principal (café) que contiene los botones de navegación */
         .header-principal {
             background-color: #4A2E1B;
             height: 60px;
@@ -17,6 +24,7 @@
             padding-left: 20px;
         }
 
+        /* Estilo base para los botones de la barra de navegación */
         .btn {
             width: 170px;
             height: 42px;
@@ -33,10 +41,12 @@
             justify-content: center;
             text-decoration: none;
         }
+        /* Variaciones de color para cada botón según la bandera de México */
         .btn-verde { background-color: #006847; color: white; }
         .btn-blanco { background-color: #FFFFFF; color: black; }
         .btn-rojo { background-color: #CE1126; color: white; }
 
+        /* Estilos de la barra secundaria (gris) que indica la sección actual */
         .subheader {
             background-color: #4B5563;
             height: 45px;
@@ -46,12 +56,14 @@
             color: white;
         }
 
+        /* Contenedor flexible que divide la pantalla en 3 columnas verticales (efecto de bandera) */
         .bandera-contenedor {
             flex: 1;
             display: flex;
             width: 100%;
         }
 
+        /* Estilos compartidos para cada franja de la bandera */
         .franja {
             flex: 1;
             padding: 20px;
@@ -61,10 +73,12 @@
         .franja h3 { margin-bottom: 15px; text-transform: uppercase; }
         .franja p { margin-bottom: 12px; font-size: 14px; text-align: left; line-height: 1.4; }
 
+        /* Colores específicos de fondo y texto para cada franja */
         .verde { background-color: #006847; color: white; }
         .blanca { background-color: #FFFFFF; color: black; }
         .roja { background-color: #CE1126; color: white; }
 
+        /* Estilos del pie de página con datos del estudiante */
         .footer {
             background-color: #374151;
             height: 40px;
@@ -80,6 +94,7 @@
 <body>
 
     <!-- HEADER CAFÉ CON BOTONES -->
+    <!-- Menú principal con enlaces a otras páginas del sitio web -->
     <header class="header-principal">
         <a href="fechasimportantes.html" class="btn btn-verde">FECHAS IMPORTANTES</a>
         <a href="datosymitos.html" class="btn btn-blanco">DATOS CURIOSOS Y MITOS</a>
@@ -87,12 +102,15 @@
     </header>
 
     <!-- SUBHEADER GRIS -->
+    <!-- Muestra el título o sección principal actual -->
     <header class="subheader">
         <h2>INICIO</h2>
     </header>
 
     <!-- CENTRO -->
+    <!-- Estructura dividida en tres franjas verticales simulando la bandera de México -->
     <main class="bandera-contenedor">
+        <!-- Franja Verde: Información introductoria del sitio -->
         <section class="franja verde">
             <h3>SEPTIEMBRE MES PATRÍO</h3>
             <p><strong>¡VIVA MEXICO!</strong></p>
@@ -100,15 +118,18 @@
             <p>Aquí podrás ver las fechas importantes del mes de septiembre, sus datos curiosos, sus mitos y sus personajes ilustres.</p>
         </section>
         
+        <!-- Franja Blanca: Imagen central del mapa de México -->
         <section class="franja blanca">
 	<img src="mapamexico.jpg" height= 70%>
         </section>
         
+        <!-- Franja Roja: Espacio para contenido adicional -->
         <section class="franja roja">
         </section>
     </main>
 
     <!-- FOOTER -->
+    <!-- Pie de página con los datos de identificación del autor/alumno -->
     <footer class="footer">
         <p>| Nombre: Andrea Franco Enríquez</p>
         <p>| No.control: 0541</p>

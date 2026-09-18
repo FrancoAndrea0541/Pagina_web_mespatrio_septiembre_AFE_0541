@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Configuración básica de codificación y diseño responsivo para dispositivos móviles -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Independencia de México - Personajes Ilustres</title>
+    
+    <!-- Hoja de estilos CSS interna -->
     <style>
+        /* Reinicio global para eliminar márgenes y rellenos por defecto del navegador */
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Asegura que la página ocupe todo el alto de la pantalla */
         html, body { height: 100%; font-family: Arial, sans-serif; }
         body { display: flex; flex-direction: column; min-height: 100vh; }
 
+        /* Estilo del encabezado principal (café) para el menú de navegación */
         .header-principal {
             background-color: #4A2E1B;
             height: 60px;
@@ -17,6 +24,7 @@
             padding-left: 20px;
         }
 
+        /* Estilos generales de los botones de navegación */
         .btn {
             width: 170px;
             height: 42px;
@@ -33,10 +41,12 @@
             justify-content: center;
             text-decoration: none;
         }
+        /* Colores asignados a cada botón */
         .btn-verde { background-color: #006847; color: white; }
         .btn-blanco { background-color: #FFFFFF; color: black; }
         .btn-rojo { background-color: #CE1126; color: white; }
 
+        /* Estilo de la barra secundaria (gris) con el título de la página */
         .subheader {
             background-color: #4B5563;
             height: 45px;
@@ -46,12 +56,14 @@
             color: white;
         }
 
+        /* Contenedor flexible principal que organiza las tres columnas horizontales */
         .bandera-contenedor {
             flex: 1;
             display: flex;
             width: 100%;
         }
 
+        /* Estilos generales para las columnas contenedoras */
         .franja {
             flex: 1;
             padding: 20px;
@@ -61,12 +73,15 @@
         .franja h3 { margin-bottom: 15px; text-transform: uppercase; }
         .franja p { margin-bottom: 12px; font-size: 14px; text-align: left; line-height: 1.4; }
         
+        /* Regla específica para ajustar las imágenes dentro de las franjas */
         .franja img { max-width: 100%; height: auto; margin-top: 10px; border-radius: 5px; }
 
+        /* Asignación de colores de la bandera mexicana a las secciones */
         .verde { background-color: #006847; color: white; }
         .blanca { background-color: #FFFFFF; color: black; }
         .roja { background-color: #CE1126; color: white; }
 
+        /* Estilo del pie de página */
         .footer {
             background-color: #374151;
             height: 40px;
@@ -82,6 +97,7 @@
 <body>
 
     <!-- HEADER CAFÉ CON BOTONES -->
+    <!-- Menú de navegación hacia las diferentes secciones del portal -->
     <header class="header-principal">
         <a href="index.html" class="btn btn-verde">INICIO</a>
         <a href="fechasimportantes.html" class="btn btn-blanco">FECHAS IMPORTANTES</a>
@@ -89,12 +105,15 @@
     </header>
 
     <!-- SUBHEADER GRIS -->
+    <!-- Indicador del título de la sección actual -->
     <header class="subheader">
         <h2>PERSONAJES ILUSTRES</h2>
     </header>
 
     <!-- CENTRO -->
+    <!-- Estructura central tricolor con la información de los héroes patrios -->
     <main class="bandera-contenedor">
+        <!-- Franja Verde: Información sobre Miguel Hidalgo e Ignacio Allende -->
         <section class="franja verde">
             <!-- Imagen de Miguel Hidalgo -->
             <img src="miguelhidalgo.jpg">
@@ -103,6 +122,7 @@
             <p><strong>Ignacio Allende:</strong> Militar criollo y líder insurgente que participó en la planeación y en las primeras batallas junto a Hidalgo.</p>
         </section>
         
+        <!-- Franja Blanca: Información sobre Josefa Ortiz de Domínguez -->
         <section class="franja blanca">
             <!-- Imagen de Josefa Ortiz -->
             <img src="josefaortiz.jpg">
@@ -111,6 +131,7 @@
             <!-- Imagen de Ignacio Allende -->
         </section>
         
+        <!-- Franja Roja: Información sobre Agustín de Iturbide y Vicente Guerrero -->
         <section class="franja roja">
             <!-- Imagen de Iturbide y Guerrero -->
             <img src="agustiniturbide.jpg">
@@ -120,6 +141,7 @@
     </main>
 
     <!-- FOOTER -->
+    <!-- Pie de página con los datos del alumno -->
     <footer class="footer">
         <p>| Nombre: Andrea Franco Enríquez</p>
         <p>| No.control: 0541</p>
